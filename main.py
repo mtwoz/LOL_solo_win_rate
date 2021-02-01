@@ -55,11 +55,11 @@ def write_data(n, m, pl, val):
 
 
 def save_data():
-    np.savetxt('top.txt', data_top, fmt='%.2f')
-    np.savetxt('jungle.txt', data_jungle, fmt='%.2f')
-    np.savetxt('mid.txt', data_mid, fmt='%.2f')
-    np.savetxt('bottom.txt', data_bottom, fmt='%.2f')
-    np.savetxt('support.txt', data_support, fmt='%.2f')
+    np.savetxt('./data/top.txt', data_top, fmt='%.2f')
+    np.savetxt('./data/jungle.txt', data_jungle, fmt='%.2f')
+    np.savetxt('./data/mid.txt', data_mid, fmt='%.2f')
+    np.savetxt('./data/bottom.txt', data_bottom, fmt='%.2f')
+    np.savetxt('./data/support.txt', data_support, fmt='%.2f')
 
 
 if __name__ == "__main__":

@@ -4,20 +4,21 @@ import map
 import champions
 from bs4 import BeautifulSoup
 
-#
-# champions = []
-#
-# with open('champions.csv') as f:
-#     f_csv = csv.reader(f)
-#     for i in f_csv:
-#         # print(i[0])
-#         champions.append(i[0])
+'''
+champions = []
 
-# mapOfhampion = dict(zip(champions, range(0, len(champions))))
+with open('champions.csv') as f:
+    f_csv = csv.reader(f)
+    for i in f_csv:
+        # print(i[0])
+        champions.append(i[0])
 
-# print(mapOfhampion['zoe'])
+mapOfhampion = dict(zip(champions, range(0, len(champions))))
 
-champion_url = 'https://www.op.gg/champion/' + champions[0] + '/statistics/top/matchup'
+print(mapOfhampion['zoe'])
+'''
+
+champion_url = 'https://www.op.gg/champion/' + champions.cp_dict[0] + '/statistics/top/matchup'
 print(champion_url)
 req = requests.get(url=champion_url)
 html = req.text

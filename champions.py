@@ -30,7 +30,7 @@ def getChampionName():
         print(i.string.lower())
 
 
-with open('champions.csv') as f:
+with open('./data/champions.csv') as f:
     f_csv = csv.reader(f)
     for i in f_csv:
         # print(i[0])
